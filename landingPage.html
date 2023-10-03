@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+  body{
+    background-color: #D1F6F6;
+}
+img {
+  width: 200px;
+  height: 100px;
+}
+
+.satu{
+  width: 1205px;
+  height: 287px;
+  flex-shrink: 0;
+  border-radius: 37px;
+  background: linear-gradient(239deg, #0F1012 30.62%, #1A2448 63.11%, #304EBA 90.96%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+}
+
+.dua{
+  margin-top: -30px;
+  width: 1206px;
+  height: 101px;
+  flex-shrink: 0;
+  border-radius: 27px;
+  background: linear-gradient(271deg, #0D170E 9.42%, #24722B 81.06%);
+  color: white;
+  text-align: center;
+}
+
+.tiga{
+  margin-top: 17px;
+  width: 1206px;
+  height: 436px;
+  display: flex;
+  border-radius: 27px;
+  background: #ACCCD3;
+}
+
+.empat{
+    margin-top: 57px;
+    margin-left: 32px;
+    width: 544px;
+    height: 313px;
+    display: flex;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.diag1{
+    margin-top: 67px;
+    margin-bottom: 145px;
+    margin-left: 70px;
+    margin-right: 372;
+    width: 102px;
+    height: 101px;
+}
+
+.diag2{
+    margin-top: 67px;
+    margin-bottom: 141px;
+    margin-left: 150px;
+    margin-right: 82px;
+    width: 102px;
+    height: 101px;
+}
+
+.text1{
+    display: flex;
+width: 146px;
+height: 21px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+}
+
+text2{
+    margin-top: 104px;
+    margin-bottom: 162px;
+    margin-left: 450px;
+    margin-right: 703px;
+    display: flex;
+width: 52px;
+height: 21px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+</style>
+<body>
+    <nav class="navbar navbar-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img style="margin-left: -15rem";  src="img/KAS WOY 1;2-01.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+          <img src="img/KAS WOY 1;2-01.png" alt="Kas Woy1">
+        </div>
+        <div style="margin-right: -15rem";class="offcanvas-body" style="opacity: 0.7;">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Riwayat Transaksi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sudah Bayar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cek Tagihan</a></li>
+          </ul>
+
+            <button type="button" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+              </svg>
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+   
+      <div class="satu  container-md">
+        <p class="text2">Saldo</p>
+        <p>Rp 500.000</p>
+      </div>
+
+      <div  class="dua container-md">
+        <p>Rp 200.000</p> 
+        <p>Dana terpakai bulan ini</p>
+      </div>
+
+      <div class="tiga container-md">
+        <div class="empat container-sm">
+          <p class="text1">Riwayat Transaksi</p>
+            <div class="diag1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="102" height="101" viewBox="0 0 102 101" fill="none">
+                <path d="M102 50.5C102 58.8048 99.9316 66.9814 95.978 74.3055C92.0244 81.6297 86.3076 87.8753 79.3341 92.4892C72.3605 97.1031 64.3455 99.9428 55.9989 100.757C47.6523 101.571 39.2317 100.334 31.4831 97.1559C23.7346 93.9778 16.8971 88.9565 11.5765 82.5369C6.25581 76.1172 2.61617 68.4973 0.979951 60.3521C-0.656272 52.2069 -0.238575 43.7878 2.19604 35.8406C4.63066 27.8935 9.00705 20.6635 14.9376 14.7911L51 50.5H102Z" fill="#2A7131" fill-opacity="0.81"/>
+                <path d="M51 0C59.1978 9.67996e-08 67.2748 1.95682 74.5466 5.70463C81.8184 9.45244 88.0706 14.8808 92.7734 21.5297C97.4763 28.1786 100.491 35.8521 101.563 43.8999C102.634 51.9477 101.73 60.1327 98.9283 67.7613C96.1262 75.3898 91.5083 82.2371 85.4658 87.7228C79.4233 93.2086 72.1343 97.1712 64.2165 99.2748C56.2988 101.378 47.9856 101.561 39.9813 99.8073C31.9771 98.0535 24.5178 94.4149 18.2356 89.2L51 50.5V0Z" fill="#92CE98"/>
+                <path d="M76.5251 94.2199C66.8046 99.7843 55.5013 102.017 44.3686 100.571C33.236 99.1257 22.8962 94.0826 14.9534 86.2246L51 50.5L76.5251 94.2199Z" fill="#2A7131"/>
+                <path d="M102 50.5C102 57.9917 100.317 65.3895 97.072 72.1573C93.8273 78.9251 89.1026 84.8933 83.2402 89.6292L51 50.5H102Z" fill="#206827"/>
+                <path d="M64.2877 1.74414C74.0261 4.34643 82.7666 9.74975 89.4038 17.2708C96.0409 24.7919 100.277 34.0929 101.575 43.9977C102.874 53.9026 101.178 63.9663 96.7002 72.9163C92.2228 81.8664 85.1656 89.3007 76.4212 94.2792L51 50.5L64.2877 1.74414Z" fill="#206827"/>
+                <path d="M14.9376 86.2089C7.36704 78.7126 2.37101 69.0473 0.657453 58.5826L51 50.5L14.9376 86.2089Z" fill="#64AC6B"/>
+                <path d="M51 0C44.3026 -7.90829e-08 37.6707 1.30622 31.4831 3.84408C25.2955 6.38195 19.6733 10.1018 14.9376 14.7911L51 50.5V0Z" fill="#59A861"/>
+              </svg>
+            </div>
+
+            <div class="diag2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="102" height="101" viewBox="0 0 102 101" fill="none">
+                <path d="M102 50.5C102 56.4412 100.941 62.3358 98.8724 67.9126L51 50.5H102Z" fill="#E7A72A"/>
+                <path d="M2.41547 65.8574C-0.840425 55.7581 -0.803918 44.9002 2.51982 34.8226C5.84356 24.7449 12.2859 15.9586 20.934 9.70877C29.5821 3.45891 39.9972 0.0624998 50.7034 0.000853777C61.4097 -0.0607922 71.864 3.21545 80.5849 9.3653L51 50.5L2.41547 65.8574Z" fill="#661274"/>
+                <path d="M98.871 67.9165C98.0332 70.1742 97.0336 72.3697 95.8799 74.4864L51 50.5L98.871 67.9165Z" fill="#FF1C1C"/>
+                <path d="M2.32114 65.5617C4.96801 73.9494 9.77948 81.508 16.28 87.4905C22.7806 93.473 30.7452 97.6722 39.3867 99.6733L51 50.5L2.32114 65.5617Z" fill="#5C4DB3"/>
+                <path d="M57.0454 100.644C50.917 101.368 44.7067 100.985 38.7165 99.5134L51 50.5L57.0454 100.644Z" fill="#46B044"/>
+                <path d="M96.0491 74.1733C92.1625 81.4251 86.5489 87.6293 79.6947 92.2484C72.8405 96.8675 64.9524 99.7624 56.7135 100.682L51 50.5L96.0491 74.1733Z" fill="#BE3232"/>
+                <path d="M80.4002 9.2357C87.0781 13.9008 92.526 20.0866 96.285 27.2721C100.044 34.4577 102.004 42.4325 102 50.5249L51 50.5L80.4002 9.2357Z" fill="#B0A3A3"/>
+              </svg>
+            </div>
+        </div>
+
+        <div class="empat container-sm">
+              
+        <div>
+
+          </div>
+        </div>
+      </div>
+
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
