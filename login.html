@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page | Kas Woy</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<style>
+    body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(img/landing.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.image {
+    display: flex;
+}
+
+.yo {
+    width: 220px;
+    margin-bottom: 10px;
+    margin-left: 43.4%;
+    margin-top: 2%;
+}
+
+a {
+    margin-top: 80px;
+    margin-left: 30%;
+    
+}
+.container {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.70); 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    fill-opacity: inherit;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 85%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.70);
+    margin-left: 31px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    width: 35%;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 134px;
+    margin-top: 15px;
+    background: #92CE98;
+}
+
+
+</style>
+<body>
+    <div class="image">
+        <img class="yo" src="img/kaswoy.png" alt="">
+        <a href="page2.html">
+            <img class="ya" src="img/about.png" alt="" style="width: 45px;" height="45px">
+        </a>
+    </div>
+    <div class="container justify-content-center">
+        <h2>Selamat Datang</h2>
+        <form action="" class="form-registrasi">
+            <div class="login">
+                <div class="input">
+                    <input class="form-control" type="text" placeholder="username" id="nama">
+                    <p id="nama-error" class="error"></p>
+                    <input class="form-control" type="password" placeholder="password" id="password"> 
+                    <p id="password-error" class="error"></p>
+                    <input class="form-control" type="submit" value="Masuk" >
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
