@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Register</title>
+    <title>Admin - KasWoy</title>
+    <link rel="shortcut icon" href="../img/logo kas woy 1;1-01.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -25,21 +26,27 @@
 <body class="bg-gradient-primary">
 
     <div class="container px-5" id="setMemberForm">
+
         <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="">
                     <div class="">
-                        <div class="p-5 m-0">
+                        <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 ">Set Member</h1>
-                                <h1 class="h5 text-gray-900 mb-4">Nama Kelas</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Set Member</h1>
                             </div>
                             <form class="user">
-                                <div class="form-group">
-                                    <label for="">Banyak Member</label>
-                                    <input type="number" class="form-control-sm" id="memberCount">
-                                    <input type="button" class="btn btn-facebook" value="Next" onclick="generateForms()">
+                                <label for="">Data Member</label>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="number" class="form-control form-control-user"
+                                        id="memberCount" placeholder="Banyak Member">
+                                    </div>
+                                    <div class="col-6">      
+                                        <input type="button" class="btn btn-primary btn-user btn-block" value="Next" onclick="generateForms()">
+                                    </div>
+
                                 </div>
                             </form>
                             <div id="memberForms"></div>
@@ -51,22 +58,24 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container col-6 " id="setSaldoForm" style="display: none;">
 
-        <div class="card o-hidden border-0  shadow-lg my-5">
+    </div>
+    
+
+    <div class="container px-5" id="setSaldoForm" style="display: none;">
+
+        <div class="card o-hidden border-0 shadow-lg my-5" >
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="">
-                    <div class="">
-                        <div class="p-5 m-0">
+                    <div class="col-lg-6">
+                        <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 ">Set Saldo</h1>
-                                <h1 class="h5 text-gray-900 mb-4">Nama Kelas</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Set Saldo</h1>
                             </div>
                             <form class="user">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="number" class="form-control form-control-user" id="exampleFirstName"
                                         placeholder="Saldo">
                                 </div>
                                 <a href="index.html" class="btn btn-primary btn-user btn-block" >
@@ -90,11 +99,12 @@
 
         for (let i = 0; i < memberCount; i++) {
             const memberForm = `
+            <label for="">Data Member ${i + 1}</label>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control-user" placeholder="Username ${i + 1}">
+                    <input type="text" class="form-control form-control-user" placeholder="Username">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control form-control-user" placeholder="Password ${i + 1}">
+                    <input type="password" class="form-control form-control-user" placeholder="Password ">
                 </div>
             `;
             memberFormsContainer.innerHTML += memberForm;
@@ -104,13 +114,13 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-    const setMemberButton = document.getElementById("setMemberButton");
-    const setMemberForm = document.getElementById("setMemberForm");
-    const setSaldoForm = document.getElementById("setSaldoForm");
+        const setMemberButton = document.getElementById("setMemberButton");
+        const setMemberForm = document.getElementById("setMemberForm");
+        const setSaldoForm = document.getElementById("setSaldoForm");
 
-    setMemberButton.addEventListener("click", function() {
-      setMemberForm.style.display = "none"; // Menghilangkan formulir Set Member
-      setSaldoForm.style.display = "block"; // Menampilkan formulir Set Saldo
+        setMemberButton.addEventListener("click", function() {
+        setMemberForm.style.display = "none"; // Menghilangkan formulir Set Member
+        setSaldoForm.style.display = "block"; // Menampilkan formulir Set Saldo
     });
   });
     </script>
