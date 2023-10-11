@@ -11,16 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <style>
-    body {
-    margin: 0px;
-    padding: 0px;
+  body {
     background-image: url(../img/landing.png);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0px;
-    padding: 0px;
 }
+
 
 .yo {
     width: 220px;
@@ -35,7 +32,8 @@
     
 } */
 .container {
-    width: 400px;
+    width: 30%;
+    min-width: 385px;
     height: auto;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.70); 
@@ -72,22 +70,24 @@ input[type="submit"] {
     margin-top: 15px;
     background: #92CE98;
 }
+#exampleModal{
+    padding: 0;
+}
 
 
 </style>
-<body class="position-relative">
+<body>
     <!-- <img src="img/landing.png" alt="" class="position-absolute top-0 start-0" style="z-index: -9;"> -->
     <div class="text-center">
-        <div class="row">
           <div class="col-md-12">
             <img class="yo" src="../img/logo kas woy 1;1-01.png" alt="">
         </div>
-    </div>
+    
     </div>
 
-    <div class="position-absolute top-0 end-0 mt-5 me-4">
+    <div class="position-absolute top-0 end-0 p-5">
         <a  data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img class="ya" src="../img/about.png" alt="" style="width: 25px;">
+          <img class="ya" src="../img/about.png" alt="" style="width: 25px; cursor: pointer;">
         </a>
 
         <!-- Modal -->
@@ -98,16 +98,17 @@ input[type="submit"] {
                 <div class="modal-body">
                     <button type="button" class="btn-close" style="float: right;" data-bs-dismiss="modal" aria-label="Close"></button>
                     <br>
+                    <img class="d-flex align-items-center justify-content-center mx-auto mb-5" src="../img/Asset 1.png" alt="" width="20%">
                     <b class="text-center mt-5">
-                        <h2>KAS WOY?</h2>
+                        <h2 class="m-0 mt-2">KAS WOY?</h2>
                     </b>
-                    <div class="text-center">
+                    <div class="text-center mt-2">
                         <p>KasWoy adalah sebuah platform yang dapat membantu<br> untuk mengelola atau memanajemen Keuangan dalam kelas</p>
                     </div>
-                    <div class="p d-flex align-items-center " style="display: flex; margin-left: 44.3%; margin-top: 10%;" >
+                    <!-- <div class="p d-flex align-items-center justify-content-center mx-auto">
                         <P>Powered by</P> 
                         <img class="" src="../img/pplg.png" alt="" style="width: 9%; margin-top: -0.5%;">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -121,7 +122,7 @@ input[type="submit"] {
                 <div class="input">
                     <input class="form-control form-control-sm" type="text" placeholder="username" aria-label=".form-control-sm example">
                     
-                    <input class="form-control form-control-sm" type="text" placeholder="password" aria-label=".form-control-sm example">
+                    <input class="form-control form-control-sm" type="password" placeholder="password" aria-label=".form-control-sm example">
                    
                     <input class="form-control form-control-sm mx-auto" type="submit" value="Masuk" >
                 </div>
