@@ -171,18 +171,19 @@
                             <h6 class="m-0 font-weight-bold text-primary">Pemasukan</h6>
                         </div>
                         <div class="card-body">
-                            <div class="row ">
-                                    <div class="col-md-3 mb-3 d-flex align-items-center">
+                            <div class="container d-flex justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-3 col-6 mb-3 d-flex align-items-center">
                                         <div class="dataTables_length">
-                                            <input type="date" class="form-control form-control-sm" name="" id="">
+                                            <input type="date" class="form-control form-control-sm" name="tanggal" placeholder="Pilih tanggal..." id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 d-flex align-items-center">
+                                    <div class="col-md-3 col-6 mb-3 d-flex align-items-center">
                                         <div class="dataTables_length">
                                             <input type="text" class="form-control form-control-sm" name="nominal" id="nominalInput" placeholder="Nominal">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 d-flex align-items-center">
+                                    <div class="col-md-3 col-6 mb-3 d-flex align-items-center">
                                         <div class="dataTables_length">
                                             <select class="custom-select custom-select-sm form-control form-control-sm" name="jenisPembayaran" id="jenisPembayaran">
                                                 <option value="Iuran Rutin">Iuran Rutin</option>
@@ -190,10 +191,12 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 mb-3 d-flex align-items-center">
+                                    <div class="col-md-3 col-6 mb-3 d-flex align-items-center">
                                         <input type="button" class="btn btn-facebook" value="Update">
                                     </div>
+                                </div>
                             </div>
+                            <hr>
                             <div class="table-responsive">
                                 <div class="container">
                                 </div>
@@ -201,10 +204,10 @@
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
+                                            <th>week 1</th>
+                                            <th>week 2</th>
+                                            <th>week 3</th>
+                                            <th>week 4</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -288,20 +291,21 @@
                                 </table>
 
 
-                                <div class="container" id="lainnyaForm" style="display: none;">
-                                    <div class="p-5 m-0">
+                                
+                                    <div class="p-5 m-0" id="lainnyaForm" style="display: none;">
                                         <form class="user">
                                             <div class="form-group">
                                                 <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                                    placeholder="Nominal" style="max-width: 50%;">
+                                                    placeholder="Nominal">
                                             </div>
                                             <div class="form-group">
                                                 <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                                    placeholder="Keterangan" style="max-width: 50%;">
+                                                    placeholder="Keterangan">
                                             </div>
+                                                
                                         </form>
                                     </div>
-                                </div>
+                                
                                 
                             </div>
                         </div>
