@@ -354,7 +354,21 @@
     crossorigin="anonymous"></script>
 
   
-    <script>
+  <script>
+
+
+    // Cek apakah modal sudah pernah dibuka sebelumnya
+    // var isModalOpened = localStorage.getItem('modalOpened');
+
+    // Jika modal belum pernah dibuka, maka buka modal
+    // if (!isModalOpened) {
+    //   window.onload = function() {
+    //     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+    //     myModal.show();
+    //   };
+    //   localStorage.setItem('modalOpened', 'true');
+    // }
+
     // Aktifkan modal saat halaman dimuat
     window.onload = function() {
       var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
